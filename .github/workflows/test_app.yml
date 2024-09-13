@@ -17,7 +17,7 @@ jobs:
                 python-version: [3.8]
         
         env:
-            MODE: ${{ secrets.MODE }}
+            MODE: "Hello"
 
         steps:
             - uses: actions/checkout@v3
@@ -33,6 +33,6 @@ jobs:
                 pip install -r ../requirements.txt
             
             - name: Test App Code
-              run: python ./main_test.app
+              run: python main_test.app
 
     
